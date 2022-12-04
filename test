@@ -1,0 +1,6 @@
+docker run -d --restart always \
+  --name webhookrelayd \
+  --network host \
+  --env RELAY_KEY=946138c9-d282-42f8-80cd-8ad936ab27d2 \
+  --env BUCKETS=github-jenkins \
+  --env RELAY_SECRET=rOk53NXUYMgG webhookrelay/webhookrelayd
